@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Weather</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            box-sizing: border-box;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(imagee.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-body {
+
+            background-color: rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
+            color: white;
+            padding: 22px;
+            height: 65vh;
+            width: 50vw;
+            border: 1px solid grey;
+            border-radius: 12% 0% 12% 0%;
+        }
+
+        @media screen and (max-width:670px) {
+            .box-body {
+                width: 80vw;
+            }
+        }
+
+        #Text-field {
+            box-sizing: border-box;
+            font-size: 10px;
+            padding: 1.5%;
+            margin-bottom: 5px;
+            width: 78%;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .search-img {
+            border: 1px solid gray;
+            width: 130%;
+            margin-left: 200%;
+            background-color: transparent;
+        }
+
+        button {
+            cursor: pointer;
+            width: 15px;
+            background-color: transparent;
+            border: 1px solid transparent;
+        }
+        #My_gif{
+
+            position: absolute;
+            left: 65%;
+            bottom: 30%;
+        }
+
+        #Temp {
+            padding-top: 1%;
+        }
+        h4{padding-bottom: 1%;}
+    </style>
+
+</head>
+
+<body>
+
+    <main class="center">
+        <div class="box-body">
+            <div class="text flex">
+                <input id="Text-field" type="text" placeholder="Enter City Name">
+                <button id="Search" onclick="testing()" ; type="submit"><img class="search-img" src="s.png"
+                        alt=""></button>
+            </div>
+            <h3 id="weather-n"></h3>
+            <h2 id="Temp"></h2><br>
+            <h4 id="Wind"></h4>
+            <h4 id="Humidity"></h4> 
+            <h4 id="Visiblity"></h4>
+            <span id="My_gif"><img src="mygif.gif" alt="" style="width: 65px;"></span>
+        </div>
+    </main>
+
+</body>
+</html>
